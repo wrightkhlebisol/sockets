@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+	</head>
+	<body>
+		<p>Welcome to chat app</p>
+		<img src="CALEB.png" alt="CALEB">
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			const socket = io();
+			socket.on('connect', () => {
+				console.log('Connected to server');
+			});
+			
+		</script>
+	</body>
+</html>
